@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('excerpt')->nullable();
-            $table->longText('content');
+            $table->longText('content_markdown');
+            $table->longText('content_html')->nullable();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

@@ -1,4 +1,10 @@
+<script setup>
+import { Head } from '@inertiajs/vue3';
+</script>
+
 <template>
+    <Head title="Blog Abraham" />
+
     <div class="min-h-screen flex flex-col items-center">
         <div class="w-5/6 sm:w-1/2 flex flex-col gap-y-8">
             <header class="flex flex-col items-center gap-y-2">
